@@ -31,7 +31,16 @@ with st.sidebar:
                           icons=['activity','heart','person'],
                           default_index=0)
     
-    
+st.markdown(
+    """
+    <style>
+    input[type="text"] {
+        font-size: 20px;  /* Adjust the font size as needed */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)    
 # Diabetes Prediction Page
 if (selected == 'Diabetes Prediction'):
     
